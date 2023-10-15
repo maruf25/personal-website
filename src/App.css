@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Untuk scrollbar track */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
+  cursor: none;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "RocaOne";
+  src: local("RocaOne"), url(./assets/roca-one-regular.ttf) format("truetype");
+}
+
+body {
+  background-color: #ffd800;
+  /* overflow-x: hidden; */
+  /* font-family: "RocaOne"; */
+  font-family: "Krona One", sans-serif;
+}
+
+.header {
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+.perkenalan {
+  display: flex;
+  margin-left: 500px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 300px;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.tagline {
+  display: block;
+  /* background-color: blue; */
+  font-family: "Krona One", sans-serif;
+  font-size: 64px;
+  margin: 100px;
+  letter-spacing: 10px;
+}
+
+.smile {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border: 5px solid black;
+  top: 50px;
+  left: 100px;
+}
+
+.text {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cursor {
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+span.strip {
+  /* width: 100px;
+  height: 100px;
+  background-color: red; */
+  color: red;
+}
+
+.mobile,
+.tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile,
+  .tablet {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 24px;
+    overflow: hidden;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile,
+  .tablet {
+    display: flex;
+  }
+}
