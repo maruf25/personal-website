@@ -13,8 +13,8 @@ const PortofolioContent = [
     link: "https://github.com/maruf25/project-donate",
   },
   {
-    title: "PROJECT PERSONAL WEBSITE",
-    link: "",
+    title: "TRACKING STITCHING ORDERS",
+    link: "https://github.com/maruf25/tailor-project",
   },
   {
     title: "SHOW MORE",
@@ -41,12 +41,12 @@ const Portofolio = (props) => {
   };
 
   return (
-    <div className="bg-white h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-screen bg-white">
       <table className="table-fixed w-[700px]">
         <thead className="align-top h-[70px]">
           <tr>
             <th
-              className="text-left text-4xl"
+              className="text-4xl text-left"
               colSpan={2}
               onMouseEnter={props.onMouseEnter}
               onMouseLeave={props.onMouseLeave}
@@ -55,7 +55,7 @@ const Portofolio = (props) => {
             </th>
           </tr>
         </thead>
-        <tbody className="align-top break-words text-2xl font-bold">
+        <tbody className="text-2xl font-bold break-words align-top">
           {PortofolioContent.map((content, key) => {
             const isOddIndex = key % 2 !== 0;
             const lastIndex = PortofolioContent.length - 1;

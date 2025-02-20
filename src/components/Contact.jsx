@@ -52,7 +52,7 @@ const Contact = (props) => {
   };
 
   return (
-    <div className="flex flex-col h-screen justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-screen p-16">
       <div
         className="text-4xl font-bold text-red-500 mb-9 w-[700px]"
         onMouseEnter={props.onMouseEnter}
@@ -144,7 +144,7 @@ const Contact = (props) => {
           onMouseLeave={props.onMouseLeave}
         >
           <motion.button
-            className="justify-self-end p-3 rounded"
+            className="p-3 rounded justify-self-end"
             type="submit"
             whileHover={{ backgroundColor: "black", color: "#ffd800", cursor: "none" }}
             whileTap={{ scale: 1.5 }}

@@ -68,7 +68,7 @@ function App() {
   return (
     <>
       {createPortal(
-        <div className="mobile tablet flex font-bold h-screen justify-center items-center bg-white">
+        <div className="flex items-center justify-center h-screen font-bold bg-white mobile tablet">
           <h1>DOESN'T SUPPORT MOBILE AND TABLET</h1>
         </div>,
         document.getElementById("mobile")
@@ -109,13 +109,3 @@ function App() {
 }
 
 export default App;
-
-// <motion.li
-//   whileHover={{ color: "#ffd800", backgroundColor: "pink" }}
-//   key={key}
-//   className="bg-black border-x-[1.5px] border-zinc-700 w-[100px] flex items-center"
-// >
-//   <motion.span className="-rotate-90 origin-center inline-block bg-red-600">
-//     {item.name}
-//   </motion.span>
-// </motion.li>
